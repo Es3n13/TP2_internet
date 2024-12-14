@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrafficSignWebApp</title>
+    <!-- CDN Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CDN Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-5">
+        <!-- Titre -->
+        <h1 class="text-center mb-4">Quiz des Panneaux</h1>
+
+        <!-- Section Nom Utilisateur -->
+        <div id="user-info" class="text-center mb-4">
+            <p class="h4">Bonjour, <span id="username"></span> !</p>
+        </div>
+
+        <!-- Section Quiz -->
+        <div id="quiz-container" class="card shadow p-4">
+            <div class="text-center mb-4">
+                <img id="quiz-image" src="" alt="Image du panneau" class="img-fluid rounded" style="max-width: 300px;">
+            </div>
+
+            <form id="quiz-form">
+                <!-- Groupe de Catégories -->
+                <div class="mb-3">
+                    <label class="form-label">Catégorie :</label>
+                    <div id="categories-group" class="d-flex flex-column">
+                        
+                    </div>
+                </div>
+
+                <!-- Groupe de Propositions -->
+                <div class="mb-3">
+                    <label class="form-label">Description :</label>
+                    <div id="propositions-group" class="d-flex flex-column"></div>
+                </div>
+
+                <!-- Boutons -->
+                <div class="text-center">
+                    <button type="button" id="next-button" class="btn btn-primary">
+                        Suivant <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- CDN Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
